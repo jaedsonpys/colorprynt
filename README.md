@@ -9,3 +9,11 @@ from colorprynt import *
 
 print('Hello world!', color='cyan')
 ```
+
+## Install
+
+Use `pip` to install **colorprynt**:
+
+```
+pip install colorprynt
+```
