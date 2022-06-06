@@ -12,7 +12,7 @@ import sys
 from typing import TextIO
 
 def print(
-    value: str, 
+    *values: str, 
     end: str = '\n',
     file: TextIO = sys.stdout,
     color: str = 'white'
@@ -34,7 +34,9 @@ def print(
     elif color == 'white':
         file.write(WHITE)
 
-    file.write(value)
+    for v in values:
+        file.write(v)
+
     file.write(CLOSE)
     file.write(end)
     file.close()
