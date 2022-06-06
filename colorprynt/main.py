@@ -35,9 +35,12 @@ def print(
     elif color == 'white':
         file.write(WHITE)
 
-    for v in values:
+    len_values = len(values)
+
+    for i, v in enumerate(values):
         file.write(v)
-        file.write(sep)
+        if i != len_values - 1:
+            file.write(sep)
 
     file.write(CLOSE)
     file.write(end)
