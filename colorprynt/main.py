@@ -38,6 +38,9 @@ def print(
     len_values = len(values)
 
     for i, v in enumerate(values):
+        if type(v) not in (str, float, int):
+            v = v.__repr__()
+
         file.write(v)
         if i != len_values - 1:
             file.write(sep)
