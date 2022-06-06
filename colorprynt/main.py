@@ -14,6 +14,7 @@ from typing import TextIO
 def print(
     *values: str, 
     end: str = '\n',
+    sep: str = '',
     file: TextIO = sys.stdout,
     color: str = 'white'
 ) -> None:
@@ -36,6 +37,7 @@ def print(
 
     for v in values:
         file.write(v)
+        file.write(sep)
 
     file.write(CLOSE)
     file.write(end)
