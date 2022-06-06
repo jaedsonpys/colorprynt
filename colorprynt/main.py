@@ -11,6 +11,7 @@ CLOSE = '\033[m'
 import sys
 from typing import TextIO
 
+
 def print(
     *values: str, 
     end: str = '\n',
