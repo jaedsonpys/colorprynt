@@ -33,3 +33,8 @@ def print(
         file.write(CYAN)
     elif color == 'white':
         file.write(WHITE)
+
+    file.write(value)
+    file.write(CLOSE)
+    file.write(end)
+    file.close()
