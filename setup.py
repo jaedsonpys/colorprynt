@@ -8,7 +8,7 @@ setup(
     author='Jaedson Silva',
     author_email='imunknowuser@protonmail.com',
     name='colorprynt',
-    version='0.1.0',
+    version='1.0.0',
     description='Print color text easily.',
     long_description=long_description,
     long_description_content_type='text/markdown',
