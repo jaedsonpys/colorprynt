@@ -47,4 +47,3 @@ def print(
 
     file.write(CLOSE)
     file.write(end)
-    file.close()
